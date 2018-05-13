@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>view</title>
+	<script type="text/javascript" src="product.js"></script>
+</head>
+<body>
+	<section class="product">
+		<article class="shouj">
+			<div id="iphone">
+				<div class="content">
+					<div class="images">
+						<img src="">
+					</div>
+					<div class="name">
+						<h2 class="title"></h2>
+						<p class="price"></p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+</body>
+</html>
+<script>
+window.onload = function() {
+	var iphone = document.getElementById('iphone');
+	var protos = [{title:'你好',price:100},{title:'混合',price:100}];
+	var str ='';
+	for(var i =0, len = protos.length; i< len; i++) {
+		var products = new product();
+		products.title = protos[i].title;
+		products.price = protos[i].price;
+		str += products.bindDom();
+	}
+	iphone.innerHTML=str;
+
+}	
+</script>
