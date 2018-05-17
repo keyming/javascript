@@ -105,3 +105,58 @@ displayinfo({    // 调用函数
 	name: 'keyming',
 	age: '29'
 })
+
+// 转换方法
+toLocaleString()、toString()和 valueOf()方法。
+
+var colors = ['red', 'blue', 'green'];
+alert(colors.toString);
+alert(colors.valueOf);
+
+// 栈方法
+
+// push 和  pop 方法。
+
+var colors = new Array();
+var count = colors.push("red", "green"); alert(count); //2
+count = colors.push("black");
+alert(count);     //3
+var item = colors.pop();
+alert(item);      //"black"
+alert(colors.length);   //2
+// 创建一个数组 // 推入两项
+// 推入另一项 // 取得最后一项
+
+// 递归
+ function factorial(num){
+        if (num <= 1){
+  return 1;
+} else { 6
+         return num * factorial(num-1);
+    }
+}
+ 
+
+ function factorial(num){
+    if (num <= 1){
+        return 1;
+    } else {
+        return num * arguments.callee(num-1);
+} }
+
+
+// 闭bao
+ßß
+    function createComparisonFunction(propertyName) {
+        return function(object1, object2){
+            var value1 = object1[propertyName];
+            var value2 = object2[propertyName];
+            if (value1 < value2){
+                return -1;
+            } else if (value1 > value2){
+                return 1;
+            } else {
+                return 0;
+} };
+}
+ 
