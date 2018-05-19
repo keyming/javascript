@@ -22,4 +22,11 @@ product.prototype = {
 		str+='</div>'
 		return str;
 	}
+	coty:function(obj) {
+		var newObj = {};
+		for (var arr in obj) {
+			newObj[arr] = obj[arr];
+		}
+		return arrObj;
+	}ßßßß
 }

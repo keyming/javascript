@@ -148,15 +148,23 @@ alert(colors.length);   //2
 // 闭bao
 ßß
     function createComparisonFunction(propertyName) {
-        return function(object1, object2){
+        return function(object1, object2) {
             var value1 = object1[propertyName];
             var value2 = object2[propertyName];
-            if (value1 < value2){
+            if (value1 < value2) {
                 return -1;
-            } else if (value1 > value2){
+            } else if (value1 > value2) {
                 return 1;
             } else {
                 return 0;
 } };
 }
  
+
+ function copy(obj) {  // 浅拷贝
+    var newObj = {};
+    for (var attr in obj) {
+        newObj[attr] = obj[attr];
+    }
+    return newObj;
+ }
