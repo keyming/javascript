@@ -114,6 +114,14 @@ alert(colors.toString);
 alert(colors.valueOf);
 
 // 栈方法
+reverse() 和 sort()
+
+var values = [1, 2, 3, 4];
+values.reverse();  
+alert(values)   // 4, 3, 2, 1
+
+
+
 
 // push 和  pop 方法。
 
