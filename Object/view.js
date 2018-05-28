@@ -176,3 +176,37 @@ alert(colors.length);   //2
     }
     return newObj;
  }
+
+function sayName(name) {
+    alert(name);
+}
+
+function sum(num1, num2) {
+    return num1 + num2;
+}
+function sayHi() {
+    alert('h1');
+}
+
+var ever = numbers.every(function(item,index,array) {
+    return (item > 2);
+})
+
+alert(item > 2) {
+}
+
+var somResult = numbers.some(function(item, index, array) {
+    return (item > 2);
+})
+
+// 没有重载（深入理解）
+
+function addSomeNumber (num) {
+    return num + 100;
+}
+
+function addSomeNumber(num) {
+    return num + 200;
+}
+
+var result = addSomeNumber(100); // 300
