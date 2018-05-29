@@ -210,3 +210,19 @@ function addSomeNumber(num) {
 }
 
 var result = addSomeNumber(100); // 300
+
+
+function create(protoName) {
+    return function(obj1, obj2) {
+        var value1 = obj1[protoName];
+        var value2 = obj2[protoName];
+
+        if (value1 < value2) {
+            return -1;
+        } else if (value1 > value2){
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+}
