@@ -226,3 +226,20 @@ function create(protoName) {
         }
     }
 }
+
+var data = [{name: 'zaChary', age: 28}, {name: 'ni'}]
+
+
+function factarial(name) {
+    if (num <= 1) {
+        return 1;
+    } else {
+        return num * factarial(num -1);
+    }
+}
+
+// toFixed （处理小数  用于货币）
+
+var num = 10.005 
+
+alert(num.toFixed) // 10.01  自动舍入
