@@ -15,6 +15,17 @@
 					}
 
 					alert(person.name);
+
+					function person (name,age,job) {
+						this.name = name;
+						this.age = age;
+						this.job = job;
+						this.sayName = sayName;
+					}
+					function sayName () {
+						alert(this.name);
+					}
+
 			}
 		</script>
 	</head>
