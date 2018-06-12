@@ -26,6 +26,16 @@
 						alert(this.name);
 					}
 
+					// 
+
+					function deleteRelust(sheet, index) {
+						if (sheet.deleteRelust) {
+							sheet.deleteRelust(index);
+						} else if (sheet.removeRule) {
+							sheet.removeRule(index);
+						}
+					}
+
 			}
 		</script>
 	</head>
