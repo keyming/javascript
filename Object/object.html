@@ -36,6 +36,26 @@
 						}
 					}
 
+					var div = document.getElementById('div');
+					var fiter = function(node) {
+						return node.tagName.toLowerCase() == 'li'?
+						NodeFiter.FITER_ACCEPT :
+						NodeFiter.FITER_SKTP;					
+					}
+
+					var node = iterator.nextNode();
+					while(node.tagName);
+					node = iterator.nextNode();
+
+					function product() {
+						this.name = 'hello wolder';
+						this.age = 16,
+						this.tagName = '个人装配',
+						obj:function() {
+							return this.name;
+						}
+					}
+
 			}
 		</script>
 	</head>
