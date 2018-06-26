@@ -243,3 +243,14 @@ function factarial(name) {
 var num = 10.005 
 
 alert(num.toFixed) // 10.01  自动舍入
+
+
+// fromCharCode方法
+// 另外，String 构造函数本身还有一个静态方法：FromCharCode 
+
+function hh() {
+    var num = '';
+    name:function() {
+        return this.name;
+    }
+}
